@@ -1,0 +1,10 @@
+let fs = require('fs');
+const num= fs.readFileSync(0).toString().trim().split(' ');
+let a = Number(num[0]);
+let b = Number(num[1]);
+let c = Number(num[2]);
+let addNum = a+b+c;
+let aveNum = addNum/3;
+console.log(addNum);
+console.log(aveNum);
+console.log(addNum - aveNum);
