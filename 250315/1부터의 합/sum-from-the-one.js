@@ -5,7 +5,7 @@ let i ;
 
 for(i=1;i<100;i++){
     result += i;
-    if(result > input)
+    if(result >= input)
         break;
 }
 console.log(i);
