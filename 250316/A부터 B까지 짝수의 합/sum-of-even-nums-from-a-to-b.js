@@ -4,7 +4,7 @@ let A = Number(input[0]);
 let B = Number(input[1]);
 let count = 0;
 
-for(let i = A;i<B;i++){
+for(let i = A;i<=B;i++){
     if(i%2===0){
         count+=i;
     }
