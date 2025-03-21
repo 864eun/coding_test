@@ -14,10 +14,10 @@ for(let d = 4 ;d<7;d++){
 for(let i=0;i<3;i++){
     let c = a[i];
     let d = b[i];
-    let total = "";
+    let total = [];
     for(let j = 0; j<c.length; j++){
-        total += (c[j])*(d[j])+" ";
+        total.push((c[j])*(d[j]));
     }
-    console.log(total);
+    console.log(total.join(" "));
 }
 
