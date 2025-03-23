@@ -11,7 +11,7 @@ let secondArray = input.slice(row+1).map(line => line.split(' ').map(Number));
 
 for (let q = 0; q < row; q++) {
     let newArray = [];
-    for (let w = 0; w < row; w++) {
+    for (let w = 0; w < col; w++) {
         newArray.push(
             firstArray[q][w] === secondArray[q][w]
                 ? 0 : 1)
