@@ -4,9 +4,9 @@ let colrow = input[0].split(" ").map(Number);
 let col = colrow[0];
 let row = colrow[1];
 
-let firstArray = input.slice(1, row+1).map(line => line.split(" ").map(Number));
+let firstArray = input.slice(1, row+1).map(line => line.trim().split(" ").map(Number));
 
-let secondArray = input.slice(row+1).map(line => line.split(' ').map(Number));
+let secondArray = input.slice(row+1).map(line => line.trim().split(' ').map(Number));
 
 
 for (let q = 0; q < row; q++) {
