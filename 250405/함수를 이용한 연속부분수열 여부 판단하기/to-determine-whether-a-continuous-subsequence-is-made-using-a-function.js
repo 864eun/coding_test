@@ -6,14 +6,30 @@ let a = input[1].split(" ").map(Number);
 let b = input[2].split(" ").map(Number);
 
 // Please Write your code here.
+function isSame(n) {
+    for (let i = 0; i < n2; i++) {
+        if (a[i + n] !== b[i]) {
+            return false;
+        }
+    }
 
-let newStringA = a.join("");
-let newStringB = b.join("");
-
-function checkIncludeNum(n,m){
-    if(n.includes(m)) return 'Yes';
-    else return 'No';
+    return true;
 }
 
-console.log(checkIncludeNum(newStringA,newStringB));
+// b가 a의 연속부분수열인지 확인합니다.
+function isSubsequence() {
+    for (let i = 0; i < n1 - n2 + 1; i++) {
+        if (isSame(i)) {
+            return true;
+        }
+    }
+    
+    return false;
+}
 
+if (isSubsequence()) {
+    console.log("Yes");
+}
+else {
+    console.log("No");
+}
