@@ -6,7 +6,7 @@ const A = input[0];
 function checkString(A){
     let count = 0;
     for(let i=0; i<A.length-1; i++){
-        for(let q=0; q<A.length-1; q++){
+        for(let q=i+1; q<A.length-1; q++){
             if(A[i]!==A[q])count++;
         }
     }
